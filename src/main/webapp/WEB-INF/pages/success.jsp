@@ -9,7 +9,7 @@
 <body>
 	<h1>Registration Details :</h1> <br>
 	Name : ${USER.name}.<br>
-	Standard : ${USER.email}. <br>
+	Email : ${USER.email}. <br>
 	Type Of User : ${USER.typeOfUser}. <br>
 	Age : ${USER.age}.<br>
 	Sex : ${USER.sex}.

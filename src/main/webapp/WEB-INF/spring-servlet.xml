@@ -10,6 +10,7 @@
 		beans -->
 	<context:component-scan base-package="com.registerform" />
 
+
 	<mvc:resources mapping="/resources/**" location="/resources/"/>
 
 	<!-- Configures the @Controller programming model -->

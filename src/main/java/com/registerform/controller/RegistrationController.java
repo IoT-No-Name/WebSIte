@@ -19,9 +19,11 @@ public class RegistrationController {
 		return "registration";
 	}
 
+
+
 	@RequestMapping(method = RequestMethod.POST)
 	public String processForm(@ModelAttribute(value = "USER") User user,
-			BindingResult result) {
+							  BindingResult result) {
 		if (result.hasErrors()) {
 			return "registration";
 		} else {

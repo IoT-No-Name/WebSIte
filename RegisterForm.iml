@@ -166,6 +166,8 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="Maven: org.webjars:jquery:2.1.1" level="project" />
+    <orderEntry type="library" name="Maven: org.webjars:bootstrap:3.2.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-core:4.0.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: commons-logging:commons-logging:1.1.1" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-web:4.0.1.RELEASE" level="project" />

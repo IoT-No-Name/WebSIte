@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="RegisterForm" />
         <module name="SpringMVCForm" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="RegisterForm" target="1.7" />
       <module name="SpringMVCForm" target="1.7" />
     </bytecodeTargetLevel>
   </component>

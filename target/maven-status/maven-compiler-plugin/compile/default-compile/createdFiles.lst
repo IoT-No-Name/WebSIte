@@ -1,0 +1,3 @@
+com\registerform\controller\AccountController.class
+com\registerform\controller\RegistrationController.class
+com\registerform\bean\User.class

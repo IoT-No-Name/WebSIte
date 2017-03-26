@@ -6,7 +6,6 @@ public class User {
 	private String email;
 	private int age;
 	private String typeOfUser = null;
-	private String typeOfUser1 = null;
 	private String sex = null;
 
 	public String getName() {
