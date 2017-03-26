@@ -39,7 +39,7 @@
             <p>By clicking Register, you agree on our <a href="#">terms and condition</a>.</p>
             <name="form1" id="form1" >
             <a href="accounts"</a>
-                <a button input id="submit" name="submit" type="submit" href="accounts" value="Submit">qwe</button>
+                <a input type="submit" class="button" href="accounts">Register</a>
 
             </form>
          </form:form>
