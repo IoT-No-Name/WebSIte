@@ -20,8 +20,8 @@ a, a:hover, a:focus {
 h1, h2 {
 	margin-top: 10px;
 	font-size: 38px;
-    font-weight: 100;
-    color: #33c8b6;
+    font-weight: 300;
+    color: #ffffff;
     line-height: 50px;
 }
 
@@ -30,6 +30,10 @@ h3 {
     font-weight: 300;
     color: #555;
     line-height: 30px;
+}
+
+.btn-group {
+	margin:auto;
 }
 
 img { max-width: 100%; }
@@ -117,6 +121,13 @@ img { max-width: 100%; }
 	padding-top: 25px;
 }
 
+.form-top-center {
+	margin-left: 35%;
+	margin-right: 65%;
+	width: 60%;
+	padding-top: 25px;
+}
+
 .form-top-left h3 { margin-top: 0; }
 
 .form-top-right {
@@ -195,4 +206,11 @@ footer a:hover, footer a:focus { border-bottom: 1px dotted #19b9e7; }
 
 	h1, h2 { font-size: 32px; }
 
+}
+
+.btn span.glyphicon {
+	opacity: 0;
+}
+.btn.active span.glyphicon {
+	opacity: 1;
 }
