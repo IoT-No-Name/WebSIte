@@ -1,62 +1,59 @@
-<!-- All the files that are required -->
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="/css/registration.css">
-<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.13.1/jquery.validate.min.js"></script>
-<script src="/js/register.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-
-<!-- REGISTRATION FORM -->
-<div class="text-center" style="padding:50px 0">
-	<div class="logo">register</div>
-	<!-- Main Form -->
-	<div class="login-form-1">
-		<form id="register-form" class="text-left">
-			<div class="login-form-main-message"></div>
-			<div class="main-login-form">
-				<div class="login-group">
-					<div class="form-group">
-						<label for="reg_username" class="sr-only">Email address</label>
-						<input type="text" class="form-control" id="reg_username" name="reg_username" placeholder="">
-					</div>
-					<div class="form-group">
-						<label for="reg_password" class="sr-only">Password</label>
-						<input type="password" class="form-control" id="reg_password" name="reg_password" placeholder="">
-					</div>
-					<div class="form-group">
-						<label for="reg_password_confirm" class="sr-only">Password Confirm</label>
-						<input type="password" class="form-control" id="reg_password_confirm" name="reg_password_confirm" placeholder="">
-					</div>
-
-					<div class="form-group">
-						<label for="reg_email" class="sr-only">Your age</label>
-						<input type="number" class="form-control" id="reg_email" name="reg_email" placeholder="">
-					</div>
-					<div class="form-group">
-						<label for="reg_fullname" class="sr-only">Full Name</label>
-						<input type="text" class="form-control" id="reg_fullname" name="reg_fullname" placeholder="">
-					</div>
-
-					<div class="form-group login-group-checkbox">
-						<input type="radio" class="" name="reg_gender" id="male" placeholder="">
-						<label for="male">male</label>
-
-						<input type="radio" class="" name="reg_gender" id="female" placeholder="">
-						<label for="female">female</label>
-					</div>
-
-					<div class="form-group login-group-checkbox">
-						<input type="checkbox" class="" id="reg_agree" name="reg_agree">
-						<label for="reg_agree">i agree with <a href="#">terms</a></label>
-					</div>
-				</div>
-				<button type="submit" class="login-button"><i class="fa fa-chevron-right"></i></button>
-			</div>
-			<div class="etc-login-form">
-				<p>already have an account? <a href="/index.html">login here</a></p>
-			</div>
-		</form>
-	</div>
-	<!-- end:Main Form -->
-</div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Bootstrap Login &amp; Register Templates</title>
+      <!-- CSS -->
+      <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+      <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+      <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/form-elements.css">
+      <link rel="stylesheet" href="css/style.css">
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+      <!-- Favicon and touch icons -->
+      <link rel="shortcut icon" href="assets/ico/favicon.png">
+      <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/ico/apple-touch-icon-72-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" href="/ico/apple-touch-icon-57-precomposed.png">
+   </head>
+   <div class="form-box">
+      <div class="form-top">
+         <div class="form-top-left">
+            <h3>Sign up now</h3>
+            <p>Fill in the form below to get instant access:</p>
+         </div>
+         <div class="form-top-right">
+            <i class="fa fa-pencil"></i>
+         </div>
+      </div>
+      <div class="form-bottom">
+         <form role="form" action="" method="post" class="registration-form">
+            <div class="form-group">
+               <label class="sr-only" for="form-first-name">First name</label>
+               <input type="text" name="form-first-name" placeholder="First name..." class="form-first-name form-control" id="form-first-name">
+            </div>
+            <div class="form-group">
+               <label class="sr-only" for="form-last-name">Last name</label>
+               <input type="text" name="form-last-name" placeholder="Last name..." class="form-last-name form-control" id="form-last-name">
+            </div>
+            <div class="form-group">
+               <label class="sr-only" for="form-email">Email</label>
+               <input type="text" name="form-email" placeholder="Email..." class="form-email form-control" id="form-email">
+            </div>
+            <div class="form-group">
+               <label class="sr-only" for="form-about-yourself">About yourself</label>
+               <textarea name="form-about-yourself" placeholder="About yourself..."
+                  class="form-about-yourself form-control" id="form-about-yourself"></textarea>
+            </div>
+            <button type="submit" class="btn">Sign me up!</button>
+         </form>
+      </div>
+   </div>
