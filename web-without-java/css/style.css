@@ -173,6 +173,10 @@ img { max-width: 100%; }
 	border-right: 1px solid #ddd;
 }
 
+.form-bottom-dash {
+	margin-top: 20%;
+}
+
 
 /***** Footer *****/
 

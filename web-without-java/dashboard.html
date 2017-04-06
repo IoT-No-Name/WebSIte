@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Freelancer &amp; Exchange Service</title>
+      <!-- CSS -->
+      <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+      <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+      <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/form-elements.css">
+      <link rel="stylesheet" href="css/dashboard.css">
+        <script src="js/dashboard.js"></script>
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+      <!-- Favicon and touch icons -->
+      <link rel="shortcut icon" href="assets/ico/favicon.png">
+      <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/ico/apple-touch-icon-72-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" href="/ico/apple-touch-icon-57-precomposed.png">
+   </head>
+   <body>
+     <div class="container">
+     <div class="row">
+         <div class="board">
+             <ul class="nav nav-tabs">
+             </ul>
+         </div>
+         <div class="tab-content">
+             <div role="tabpanel" class="tab-pane active" id="step-1">
+                 <div class="col-md-12">
+
+
+                     <h3>Offer Info</h3>
+                     <div class="col-md-6">
+                         <div class="form-group">
+                             <label class="control-label">Name of offer</label>
+                             <input  maxlength="100" type="text" required="required" class="form-control" placeholder="Enter Name"  />
+                         </div>
+                     </div>
+                     <div class="col-md-6">
+                         <div class="form-group">
+                             <label class="control-label">Duration of offer</label>
+                             <input  maxlength="10" type="text"  class="form-control" placeholder="12-3456789"  />
+                         </div>
+                     </div>
+                     <div class="col-md-6">
+                         <div class="form-group">
+                             <label for="subject">
+                                 Type of offer</label>
+                             <select id="subject" name="subject" class="form-control" required="required">
+                                 <option value="na" selected="">Web dev:</option>
+                                 <option value="service">Game dev</option>
+                                 <option value="suggestions">Programm dev</option>
+                                 <option value="product">QA/Testing</option>
+                                 <option value="product">Scripts</option>
+                             </select>
+                         </div>
+                     </div>
+                     <div class="col-md-6">
+                         <div class="form-group">
+                             <label class="control-label">Your Website (option)</label>
+                             <input maxlength="100" type="text"  class="form-control" placeholder="URL" />
+                         </div>
+                     </div>
+                     <h3>Yout Location(for security)</h3>
+                     <div class="col-md-6">
+                         <div class="form-group">
+                             <label class="control-label">Street Adress</label>
+                             <input  maxlength="100" type="text" required="required" class="form-control" placeholder="Enter Address"  />
+                         </div>
+                     </div>
+                     <div class="col-md-6">
+                         <div class="form-group">
+                             <label class="control-label">City</label>
+                             <input  maxlength="40" type="text" required="required" class="form-control" placeholder="Enter City"  />
+                         </div>
+                     </div>
+                     <div class="col-md-6">
+                         <div class="form-group">
+                             <label class="control-label">ZIP</label>
+                             <input  maxlength="5" type="text" required="required" class="form-control" placeholder="Enter ZIP Code"  />
+                         </div>
+                     </div>
+                     <div class="col-md-6">
+                         <div class="form-group">
+                             <label class="control-label">State</label>
+                             <input  maxlength="2" type="text" required="required" class="form-control" placeholder="Enter State"  />
+                         </div>
+                     </div>
+                     <h3>Your Contact</h3>
+                     <div class="col-md-6">
+                         <div class="form-group">
+                             <label class="control-label">Phone Number</label>
+                             <input  maxlength="14" type="text" required="required" class="form-control" placeholder="(555) 555-5555"  />
+                         </div>
+                     </div>
+                     <div class="col-md-6">
+                         <div class="form-group">
+                             <label class="control-label">Email</label>
+                             <input  maxlength="100" type="text" required="required" class="form-control" placeholder="Enter Email"  />
+                         </div>
+                     </div>
+
+                     <button id="step-1-next" class="btn btn-lg btn-primary nextBtn pull-right name="B1" value="Get your session link!" class="btn btn-info" onclick="randomlink()"">Generate session!</button>
+
+                 </div>
+             </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
+ <nav class="navbar navbar-findcond navbar-fixed-top">
+    <div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="dashboard.html">Freelancer Exchange Service</a>
+		</div>
+		<div class="collapse navbar-collapse" id="navbar">
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-fw fa-bell-o"></i> Notification <span class="badge">0</span></a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="#"><i class="fa fa-fw fa-tag"></i> <span class="badge">Offers</span> say <span class="badge">Video</span> sayfasında etiketlendi</a></li>
+					</ul>
+				</li>
+				<li class="active"><a href="#">Ana Sayfa <span class="sr-only">(current)</span></a></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Admin <span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="#">Geri bildirim</a></li>
+						<li><a href="#">Yardım</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Ayarlar</a></li>
+						<li><a href="#exit">Çıkış yap</a></li>
+					</ul>
+				</li>
+			</ul>
+			<form class="navbar-form navbar-right search-form" role="search">
+				<input type="text" class="form-control" placeholder="Search" />
+			</form>
+		</div>
+	</div>
+</nav>
+  <script>
+  var randomlinks=new Array()
+
+  randomlinks[0]="http://localhost:3000/offer.html"
+  randomlinks[1]="http://localhost:3000/offer.html"
+  randomlinks[2]="http://localhost:3000/offer.html"
+  randomlinks[3]="http://localhost:3000/offer.html"
+  randomlinks[4]="http://localhost:3000/offer.html"
+
+  function randomlink(){
+  window.location=randomlinks[Math.floor(Math.random()*randomlinks.length)]
+  }
+  //-->
+  </script>
+  <!--Uncomment below to use a regular text link instead
+  <a href="javascript:randomlink()">Random Link</a>
+  -->
+              </body>
+              </html>
