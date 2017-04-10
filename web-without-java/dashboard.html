@@ -16,11 +16,12 @@
 
     <!-- Custom CSS -->
     <link href="css/dashboard.css" rel="stylesheet">
-
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <script src="js/dashboard-actions.js"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -51,6 +52,9 @@
             </li>
             <li>
                 <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
+            </li>
+            <li>
+                <a href="index.html" onclick="logout();">Logout</a>
             </li>
         </ul>
     </nav>
