@@ -1,83 +1,78 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="dist/js/bootstrap-checkbox.min.js" defer></script>
     <script src="https://code.jquery.com/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <title>Page sharing</title>
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style-sharing.css">
-    <link rel="shortcut icon" href="assets/ico/favicon.png">
-  </head>
+    <link rel="stylesheet" href="css/style-sharing.css"><link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
 
 
-  <body>
-    <div class = "customer">
-      <div class="customer-text">
-        <h1>Customer</h1>
-      </div>
-      <div class="select-currency">
-        <div class="row">
-         <div class="col-md-6">
-           <div class="btn-group">
-             <div class="dropdown">
-               <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">
-                 Select currency <span class="carret"></span>
-               </button>
+<body>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="customer">
+                <div class="customer-text">
+                    <h1>Customer</h1>
+                </div>
+                <div class="input-group">
+                    <input type="text" class="form-control" aria-label="...">
+                    <div class="input-group-btn">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li>UAH</li>
+                            <li>RUB</li>
+                            <li>USD</li>
+                        </ul>
+                    </div>
+                </div>
+                <label for="check-one">
+                  <input type="checkbox" name="check-one" id="check-one" value="checkone"/>
+                  <i></i> <span>Ready</span>
+                </label>
 
-               <ul class="dropdown-menu">
-                 <li><a tabindex="-1" href="#">USD</a></li>
-                 <li><a tabindex="-1" href="#">UAH</a></li>
-                 <li><a tabindex="-1" href="#">RUB</a></li>
-               </ul>
-           </div>
-          </div>
-         </div>
-       </div>
-     </div>
-
-      <div class="input-cash">
-        <fieldset>
-          <input type="text" placeholder="Enter the amount">
-        </fieldset>
-      </div>
+            </div>
+        </div>
 
 
-     <div class="checkbox-customer">
-       <div class="form-check mb-2 mr-sm-2 mb-sm-0">
-         <label class="form-check-label">
-           <input class="form-check-input" type="checkbox"> Ready
-         </label>
-       </div>
-     </div>
+
+
+
+
+        <div class="col-md-6">
+            <div class="freelancer">
+                <div class="freelancer-text">
+                    <h1>Freelancer</h1>
+                </div>
+                <div class="input-group">
+                    <label class="input-group-btn">
+                    <span class="btn btn-primary">
+                        Browse&hellip; <input type="file" style="display: none;" multiple>
+                    </span>
+                </label>
+                    <input type="text" class="form-control" readonly>
+                </div>
+                <span class="help-block">
+            </span>
+
+            <label for="checkbox-freelancer">
+              <input type="checkbox" name="check-one" id="check-one" value="checkone"/>
+              <i></i> <span>Ready</span>
+            </label>
+            </div>
+
+        </div>
     </div>
+</body>
 
-<div class="freelancer">
-    <div class="freelancer-text">
-      <h1>Freelancer</h1>
-    </div>
-
-     <div class="browse-file">
-       <span class="btn btn-info">
-         Browse <input type="file">
-       </span>
-     </div>
-
-     <div class="checkbox-freelancer">
-       <div class="form-check mb-2 mr-sm-2 mb-sm-0">
-         <label class="form-check-label">
-           <input class="form-check-input" type="checkbox"> Ready
-         </label>
-       </div>
-     </div>
-    </div>
-    <div class="btn-sharing">
-      <button type="button">Share</button>
-    </div>
-  </body>
 </html>
