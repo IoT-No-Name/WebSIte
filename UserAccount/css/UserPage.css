@@ -191,6 +191,7 @@ img {
 
 .primary-menu>ul>li:last-child {
     margin-right: 0;
+    margin-left: 100px;
 }
 
 .primary-menu>ul>li a {
