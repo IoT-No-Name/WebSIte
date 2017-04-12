@@ -22,18 +22,21 @@ h1 {
     line-height: 50px;
 }
 
+            /*Cucstomer */
 
 .customer {
-    position: relative;
+    margin: auto;
     margin-top: 120px;
+    padding-bottom: 10px;
+    background-color: rgba(186, 186, 186, 0.6);
+    -moz-border-radius: 6px 6px 6px 6px; -webkit-border-radius: 6px 6px 6px 6px; border-radius: 6px 6px 6px 6px;
+    background-position: center;
+    width: 450px;
+    filter: opacity(0.9);
 }
 
 .input-group {
     margin-top: 30px;
-}
-
-.customer-text {
-    position: relative;
 }
 
 li {
@@ -64,15 +67,20 @@ li {
     float: right;
 }
 
+
+
+              /* freelancer */
+
 .freelancer {
-    margin-top: 120px;
+  margin: auto;
+  margin-top: 120px;
+  padding-bottom: 10px; 
+  background-color: rgba(186, 186, 186, 0.6);
+  -moz-border-radius: 6px 6px 6px 6px; -webkit-border-radius: 6px 6px 6px 6px; border-radius: 6px 6px 6px 6px;
+  background-position: center;
+  width: 450px;
+  filter: opacity(0.9);
 }
-
-.browse-file {
-    position: relative;
-}
-
-
 
 .freelancer-text {
     vertical-align: middle;
@@ -86,7 +94,8 @@ li {
 
 
 @-webkit-keyframes
-icon-beat {  0% {
+icon-beat {
+  0% {
  -webkit-transform: scale(2);
  -ms-transform: scale(2);
  transform: scale(2);
@@ -99,7 +108,8 @@ icon-beat {  0% {
 }
 
 @keyframes
-icon-beat {  0% {
+icon-beat {
+  0% {
  -webkit-transform: scale(2);
  -ms-transform: scale(2);
  transform: scale(2);
@@ -121,7 +131,10 @@ label {
   -webkit-tap-highlight-color: transparent;
 }
 
-label:last-of-type { margin-right: 1rem; }
+label:last-of-type {
+  margin-right: 1rem;
+  margin-top: 10px;
+}
 
 label i {
   display: inline-block;
@@ -139,7 +152,9 @@ label span {
   color: #ffffff;
 }
 
-input[type="checkbox"] { display: none; }
+input[type="checkbox"] {
+  display: none;
+}
 
 input[type="checkbox"] + i:before {
   font-family: 'FontAwesome';
@@ -156,8 +171,35 @@ input[type="checkbox"]:checked + i {
 }
 
 
-input[type="checkbox"] + i:before { content: "\f096"; }
+input[type="checkbox"] + i:before {
+   content: "\f096";
+}
 
-input[type="checkbox"]:checked + i:before { content: "\f046"; }
+input[type="checkbox"]:checked + i:before {
+   content: "\f046";
+ }
 
-input[type="checkbox"]:checked + i:before { color: #ffffff; }
+input[type="checkbox"]:checked + i:before {
+  color: #ffffff;
+}
+
+.btn-share{
+  width: 300px;
+  margin: auto;
+  margin-top: 100px
+}
+.footer-border {
+	width: 200px;
+	margin: auto;
+  margin-top: 120px;
+	border-top: 1px solid #ddd;
+}
+
+
+p{
+
+  font-size: 16px;
+  font-weight: 300;
+  color: #ffffff;
+  line-height: 50px;
+}
