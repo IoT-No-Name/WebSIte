@@ -3,7 +3,7 @@ var pw = document.getElementById('pw');
 
 function store() {
     localStorage.setItem('savedData', JSON.stringify([username.value,password.value]));
-    localStorage.setItem('Type of user',$('input[name="options"]:checked').val());
+    localStorage.setItem('Type of user',JSON.stringify($('input[name="options"]:checked').val()));
     object1 = JSON.parse(localStorage.getItem('savedData'));
 }
 

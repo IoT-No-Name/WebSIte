@@ -2,7 +2,7 @@
 function storeReg() {
   localStorage.setItem('registerDetails', JSON.stringify([firstname.value,lastname.value,
                                                           email.value, password.value]));
-  localStorage.setItem('Type of user',$('input[name="typeofUser"]:checked').val());
+  localStorage.setItem('Type of user',JSON.stringify($('input[name="typeofUser"]:checked').val()));
   object1= JSON.parse(localStorage.getItem('registerDetails'));
 }
 
