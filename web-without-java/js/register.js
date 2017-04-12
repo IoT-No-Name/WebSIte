@@ -6,16 +6,21 @@ function storeReg() {
   object1= JSON.parse(localStorage.getItem('registerDetails'));
 }
 
-window.onload = function () {
-   document.getElementById("password").onchange = validatePassword;
-    document.getElementById("confirm_password").onchange = validatePassword;
+function check() {
+
+
+var pass1 = document.getElementById("password").value;
+  var pass2 = document.getElementById("confirm_password").value;
+  var ok = true;
+  if (pass1 != pass2) {
+      //alert("Passwords Do not match");
+      document.getElementById("password").style.borderColor = "#E34234";
+      document.getElementById("confirm_password").style.borderColor = "#E34234";
+      ok = false;
+      alert("Passwords dont match!")
   }
-  function validatePassword(){
-    var pass2=document.getElementById("password").value;
-    var pass1=document.getElementById("confirm_password").value;
-    if(pass1!=pass2)
-     document.getElementById("password").setCustomValidity("Passwords Don't Match");
-     else
-      document.getElementById("confirm_password").setCustomValidity('');
-      //empty string means no validation error
-    }
+  else {
+  }
+  return ok;
+
+}
