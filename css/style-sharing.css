@@ -56,7 +56,6 @@ li {
     filter: alpha(opacity=0);
     opacity: 0;
     outline: none;
-    background: white;
     cursor: inherit;
     display: block;
 }
@@ -80,8 +79,18 @@ li {
     position: relative;
 }
 
-::selection { background: white; }
+::-moz-selection {
+ background: white;
+}
 
+
+
+@-webkit-keyframes
+icon-beat {  0% {
+ -webkit-transform: scale(2);
+ -ms-transform: scale(2);
+ transform: scale(2);
+}
  100% {
  -webkit-transform: scale(1);
  -ms-transform: scale(1);
@@ -103,6 +112,15 @@ icon-beat {  0% {
 }
 
 
+label {
+  display: block;
+  position: relative;
+  padding: 0.5rem 1rem;
+  line-height: 28px;
+  font-weight: normal;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
 
 label:last-of-type { margin-right: 1rem; }
 
@@ -138,15 +156,14 @@ input[type="checkbox"]:checked + i {
   animation: icon-beat 0.1s ease;
 }
 
-input[type="radio"]:checked + i + span,
 input[type="checkbox"]:checked + i + span {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
 }
 
+
 input[type="checkbox"] + i:before { content: "\f096"; }
 
 input[type="checkbox"]:checked + i:before { content: "\f046"; }
 
-input[type="checkbox"]:checked + i + span,
-input[type="checkbox"]:checked + i:before { color: rgba(0, 128, 0, 0.5); }
+input[type="checkbox"]:checked + i:before { color: #ffffff; }
