@@ -115,7 +115,6 @@ icon-beat {  0% {
 label {
   display: block;
   position: relative;
-  padding: 0.5rem 1rem;
   line-height: 28px;
   font-weight: normal;
   cursor: pointer;
@@ -154,11 +153,6 @@ input[type="checkbox"]:checked + i {
   position: relative;
   -webkit-animation: icon-beat 0.1s ease;
   animation: icon-beat 0.1s ease;
-}
-
-input[type="checkbox"]:checked + i + span {
-  -webkit-transition: all 0.1s ease;
-  transition: all 0.1s ease;
 }
 
 
