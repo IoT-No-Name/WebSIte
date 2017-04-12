@@ -2,9 +2,9 @@ var name = document.getElementById('username');
 var pw = document.getElementById('pw');
 
 function store() {
-    localStorage.setItem('username', username.value);
-    localStorage.setItem('pw', password.value);
+    localStorage.setItem('savedData', JSON.stringify([username.value,password.value]));
     localStorage.setItem('Type of user',$('input[name="options"]:checked').val());
+    object1 = JSON.parse(localStorage.getItem('savedData'));
 }
 
 function check() {
