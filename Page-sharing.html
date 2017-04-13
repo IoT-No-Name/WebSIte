@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="dist/js/bootstrap-checkbox.min.js" defer></script>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <title>Page sharing</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style-sharing.css"><link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="customer">
+                <div class="customer-text">
+                    <h1>Customer</h1>
+                </div>
+                <div class="input-group">
+                    <input type="text" class="form-control" aria-label="...">
+                    <div class="input-group-btn">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select currectly<span class="caret"></span></button>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li>UAH</li>
+                            <li>RUB</li>
+                            <li>USD</li>
+                        </ul>
+                    </div>
+                </div>
+                <label for="check-one">
+                  <input type="checkbox" name="check-one" id="check-one" value="checkone"/>
+                  <i></i> <span>Ready</span>
+                </label>
+
+            </div>
+        </div>
+
+
+        <div class="col-md-6">
+            <div class="freelancer">
+                <div class="freelancer-text">
+                    <h1>Freelancer</h1>
+                </div>
+                <div class="input-group">
+                    <label class="input-group-btn">
+                    <span class="btn btn-primary">
+                        Browse&hellip; <input type="file" style="display: none;" multiple>
+                    </span>
+                </label>
+                    <input type="text" class="form-control" readonly>
+                </div>
+                <span class="help-block">
+                </span>
+
+                <label for="check-two">
+                  <input type="checkbox" name="check-two" id="check-two" value="check-two"/>
+                  <i></i> <span>Ready</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="btn-share">
+      <button type="button" class="btn btn-primary btn-lg btn-block">SHARE</button>
+    </div>
+
+    <div class="footer-border"></div>
+      <p>Made by Students at
+        <a href="http://iot.lviv.ua" target="_blank">
+          <strong>IOT</strong>
+        </a> having a lot of fun.
+        <i class="fa fa-smile-o"></i>
+      </p>
+  </body>
+
+</html>
