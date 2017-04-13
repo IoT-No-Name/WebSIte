@@ -1,0 +1,270 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+    min-height: 100%;
+    position: relative;
+}
+
+a {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.row {
+    background-image: url(../img/back.jpg);
+}
+
+body {
+    background: url(../img/back.jpg) repeat;
+}
+
+img {
+    max-width: 100%;
+}
+
+.col-sm-4 hr {
+    width: 100px;
+    background-color: #179C87;
+    height: 3px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: none;
+    border-width: 5px;
+    margin-top: 5px;
+}
+
+
+/*-----------------------left column-----------------------------*/
+
+.col-sm-4 {
+    height: 100%;
+}
+
+
+/*------------------------social media------------*/
+
+.social-media {
+    width: 350px;
+    height: 100px;
+    background-color: #179C87;
+    margin-left: 40px;
+    border-radius: 0 0 4px 4px;
+}
+
+.first-sircle {
+    margin-left: 35px;
+    margin-top: auto;
+}
+
+.second-sircle {
+    margin-left: 140px;
+    margin-top: auto;
+}
+
+.third-sircle {
+    margin-left: 245px;
+    margin-top: auto;
+}
+
+.first-sircle:hover {
+    color: #333;
+    background-color: #ECF0F1 ;
+}
+
+.second-sircle:hover {
+    color: #333;
+    background-color: #ECF0F1;
+}
+
+.third-sircle:hover {
+    color: #333;
+    background-color: #ECF0F1;
+}
+
+.first-sircle,
+.second-sircle,
+.third-sircle {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    background-color: #BFC4C7;
+    position: absolute;
+}
+
+.facebook-icon {
+    margin-top: 15px;
+    margin-left: 23px;
+}
+
+.twitter-icon {
+    margin-top: 15px;
+    margin-left: 18px;
+}
+
+.linkedin-icon {
+    margin-top: 15px;
+    margin-left: 18px;
+}
+
+.fa-facebook,
+.fa-twitter,
+.fa-linkedin {
+    color: #179C87;
+}
+
+
+/*----------------------photo--------------------*/
+
+.img-circle {
+    border: 8px solid #BFC2C7;
+    margin-top: 40px;
+    margin-left: 90px;
+}
+
+.name,
+.sirname {
+    font-size: 30px;
+    width: auto;
+    height: 40px;
+    font-family: 'Roboto', sans-serif;
+    color: #FFF;
+    text-align: center;
+}
+
+.name {
+    margin-top: 10px;
+}
+
+.description {
+    margin-top: 10px;
+    font-size: 25px;
+    width: auto;
+    height: 30px;
+    font-family: 'Roboto', sans-serif;
+    color: #FFF;
+    text-align: center;
+    font-weight: 300;
+}
+
+
+/*--------------------------right column------------------------*/
+
+.col-sm-8 {
+    height: 100%;
+}
+
+
+/*--------------------primary-menu-----------------*/
+
+.primary-menu {
+    background-color: #179C87;
+    margin: 0;
+    padding: 0;
+    height: 75px;
+    width: 880px;
+    border-radius: 0 0 4px 4px;
+}
+
+.primary-menu>ul {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: 0;
+}
+
+.primary-menu>ul>li {
+    list-style: none;
+    font-size: 16px;
+    padding: 0;
+}
+
+.primary-menu>ul>li:last-child {
+    margin-right: 0;
+    margin-left: 100px;
+}
+
+.primary-menu>ul>li a {
+    color: #FFF;
+    text-decoration: none;
+    height: 75px;
+    line-height: 75px;
+    padding: 0 25px;
+}
+
+.primary-menu>ul>li a:hover {
+    color: #333;
+    background-color: #FFF;
+    border-radius: 0 0 0 0;
+}
+
+.primary-menu>ul>li:first-child a:hover {
+    border-radius: 0 0 0 4px;
+}
+
+.list-inline {
+    margin-right: 50px;
+    font-style: none;
+}
+
+
+/*----------------------info-------------------*/
+
+.info {
+    width: 880px;
+    height: 500px;
+    background-color: #FFF;
+    border-radius: 4px 4px 4px 4px;
+    margin-top: 40px;
+}
+
+.top-info,
+.bottom-info {
+    background-color: #ECF0F1;
+    width: 840px;
+    height: 220px;
+    margin-left: 20px;
+    position: absolute;
+    border-radius: 4px 4px 4px 4px;
+    border: 2px groove #BFC2C7;
+}
+
+.top-info {
+    margin-top: 20px;
+}
+
+.bottom-info {
+    margin-top: 260px;
+}
+
+h1,
+h3,
+p {
+    color: #4A4D52;
+    margin-left: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 40px;
+    position: relative;
+}
+
+hr {
+    width: 200px;
+    background-color: #179C87;
+    height: 1px;
+    display: block;
+    margin-left: 20px;
+    border-style: none;
+    border-width: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
