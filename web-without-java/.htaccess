@@ -1,0 +1,9 @@
+ErrorDocument 404 /404.html
+Options All -Indexes
+RewriteEngine on
+
+          RewriteRule ^main/$    /index.html [L]
+
+          RewriteRule ^registration/$ /registration.html [L]
+
+          RewriteRule ^dashboard/$      /dashboard.html [L]
