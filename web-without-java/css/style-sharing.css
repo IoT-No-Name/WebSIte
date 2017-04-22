@@ -1,57 +1,57 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    background: url(../img/back.jpg);
-    left top repeat;
+  background: url(../img/back.jpg);
+  left top repeat;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 300;
     color: #888;
     line-height: 30px;
     text-align: center;
-}
-
-h1 {
-    margin-top: 10px;
-    font-size: 38px;
+  }
+  h1{
+	margin-top: 10px;
+	font-size: 38px;
     font-weight: 300;
     color: #ffffff;
     line-height: 50px;
 }
-
-
-.customer {
-    position: relative;
-    margin-top: 120px;
+button{
+  display: inline-block;
+	height: 50px;
+	margin: 5px;
+	padding: 15px 20px 0 20px;
+	background: rgba(0, 0, 0, 0.3);
+	border: 1px solid #fff;
+	font-size: 16px;
+    font-weight: 300;
+    line-height: 16px;
+    color: #fff;
+    -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
 }
 
-.input-group {
-    margin-top: 30px;
+.customer{
+  background-image: url(../img/bg1.png);
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 150px;
+}
+.customer-text{
+  position: relative;
 }
 
-.customer-text {
-    position: relative;
+.select-currency{
+  position: relative;
+  left: 350px;
+  bottom: 10px;
 }
 
-.select-currency {
-    position: relative;
-    
+.input-cash{
+  position: relative;
 }
-
-.input-cash {
-    position: relative;
-}
-
-.checkbox-customer {
-    position: relative;
-    margin-top: 30px;
-}
-
-li {
-    margin-left: 20px;
+.checkbox-customer{
+  position: relative;
 }
 
 .btn-file input[type=file] {
@@ -67,33 +67,30 @@ li {
     background: white;
     cursor: inherit;
     display: block;
-}
+  }
 
-.btn-group {
-    float: right;
-}
-
-.freelancer {
-    margin-top: 120px;
-}
-
-.browse-file {
+.freelancer{
     position: relative;
+    background-image: url(../img/bg1.png);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    top: 200px;
 }
 
-.checkbox-freelancer {
-    position: relative;
+.browse-file{
+  position: relative;
 }
-
-.form-check-label {
+.checkbox-freelancer{
+  position: relative;
+}
+.form-check-label{
     position: relative;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-weight: 300;
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 300;
     color: #FFFFFF;
 }
-
-.freelancer-text {
-    vertical-align: middle;
-    position: relative;
+.freelancer-text{
+  position: relative;
 }
