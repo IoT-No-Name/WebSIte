@@ -6,3 +6,5 @@
 /SIte/packages
 /SIte/SIte/bin
 /SIte/SIte/obj
+*.mdf
+*.ldf
