@@ -4,6 +4,11 @@ body {
     background-image: url(../img/back.jpg);
 }
 
+.row-balance-row {
+    width: 400px;
+    margin: auto;
+}
+
 .credit-card-box .panel-title {
     display: inline;
     font-weight: bold;
