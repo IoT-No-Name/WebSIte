@@ -23,7 +23,7 @@ h3 {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
-  background: url(../img/back.jpg)
+  background: url(back.jpg);
 }
 
 .text-vertical-center h1 {
