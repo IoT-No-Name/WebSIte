@@ -3,7 +3,6 @@
 {
     Layout = null;
 }
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,7 +30,9 @@
     <![endif]-->
 </head>
 <body>
-    <!-- Navigation -->
+@using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" }))
+{
+    @Html.AntiForgeryToken()
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
     <nav id="sidebar-wrapper">
         <ul class="sidebar-nav">
@@ -54,9 +55,8 @@
             <li>
             <li><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>
             </li>
-            </div>
-        </ul>
-    </nav>
+            </nav>
+}
     <!-- Header -->
     <header id="top" class="header">
         <div class="text-vertical-center">
@@ -66,6 +66,7 @@
             <a href="/deal.html" class="btn btn-dark btn-lg">Click me!</a>
         </div>
     </header>
+
     <!-- About -->
     <section id="about" class="about">
         <div class="container">
@@ -87,6 +88,7 @@
             <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.3862832239406!2d24.006301715359864!3d49.835198979395244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add78e77ab623%3A0x9187f65ba5384425!2z0IbQvdGB0YLQuNGC0YPRgiDQutC-0LzQvyfRjtGC0LXRgNC90LjRhSDQvdCw0YPQuiDRgtCwINGW0L3RhNC-0YDQvNCw0YbRltC50L3QuNGFINGC0LXRhdC90L7Qu9C-0LPRltC5!5e0!3m2!1suk!2sua!4v1491728251793"></a>
         </small>
     </section>
+    
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -124,6 +126,7 @@
         </div>
         <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
     </footer>
+ 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->
