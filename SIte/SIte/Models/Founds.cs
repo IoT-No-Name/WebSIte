@@ -10,6 +10,6 @@ namespace SIte.Models
         public String Purpose { get; set; }
         public decimal Amount { get; set; }
         public int Id { get; set; }
-
+        public String UserId { get; set; }
     }
 }

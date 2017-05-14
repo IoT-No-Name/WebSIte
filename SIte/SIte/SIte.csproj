@@ -205,6 +205,10 @@
     <Compile Include="Migrations\201705141401464_AddFounds.Designer.cs">
       <DependentUpon>201705141401464_AddFounds.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201705141507577_AddFounds1.cs" />
+    <Compile Include="Migrations\201705141507577_AddFounds1.Designer.cs">
+      <DependentUpon>201705141507577_AddFounds1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Founds.cs" />
@@ -353,6 +357,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201705141401464_AddFounds.resx">
       <DependentUpon>201705141401464_AddFounds.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705141507577_AddFounds1.resx">
+      <DependentUpon>201705141507577_AddFounds1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

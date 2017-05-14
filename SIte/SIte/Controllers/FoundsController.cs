@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using SIte.Models;
+using Microsoft.AspNet.Identity;
 
 namespace SIte.Controllers
 {
@@ -17,7 +18,8 @@ namespace SIte.Controllers
         // GET: Founds
         public ActionResult Index()
         {
-            return View(db.Founds.ToList());
+            var UserId = this.User.Identity.GetUserId(); 
+            return View(db.Founds.Where(f=>f.UserId==UserId).ToList());
         }
 
        // GET: Founds/Create
@@ -35,6 +37,8 @@ namespace SIte.Controllers
         {
             if (ModelState.IsValid)
             {
+                var UserId = this.User.Identity.GetUserId();
+                founds.UserId=UserId;
                 db.Founds.Add(founds);
                 db.SaveChanges();
                 return RedirectToAction("Index");
