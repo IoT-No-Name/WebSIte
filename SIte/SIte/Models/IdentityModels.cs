@@ -29,5 +29,7 @@ namespace SIte.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<SIte.Models.Founds> Founds { get; set; }
     }
 }
