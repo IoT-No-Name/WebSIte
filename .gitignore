@@ -10,3 +10,5 @@
 *.ldf
 SIte/SIte/App_Data/aspnet-SIte-20170425014057.mdf
 SIte/SIte/App_Data/aspnet-SIte-20170425014057_log.ldf
+*.mdf
+SIte/SIte/App_Data/aspnet-SIte-20170425014057_log.ldf
